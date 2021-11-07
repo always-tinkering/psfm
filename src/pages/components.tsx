@@ -71,7 +71,7 @@ export default function ComponentsPage() {
                 </p>
                 <div className='space-x-2'>
                   <UnstyledLink href='/'>Internal Links</UnstyledLink>
-                  <UnstyledLink href='https://theodorusclarence.com'>
+                  <UnstyledLink href='h'>
                     Outside Links
                   </UnstyledLink>
                 </div>
@@ -84,7 +84,7 @@ export default function ComponentsPage() {
                 </p>
                 <div className='space-x-2'>
                   <CustomLink href='/'>Internal Links</CustomLink>
-                  <CustomLink href='https://theodorusclarence.com'>
+                  <CustomLink href='/index'>
                     Outside Links
                   </CustomLink>
                 </div>
@@ -97,19 +97,19 @@ export default function ComponentsPage() {
                 <div className='flex flex-wrap gap-2'>
                   <ButtonLink
                     variant='primary'
-                    href='https://theodorusclarence.com'
+                    href='/index'
                   >
                     Primary Variant
                   </ButtonLink>
                   <ButtonLink
                     variant='dark'
-                    href='https://theodorusclarence.com'
+                    href=''
                   >
                     Dark Variant
                   </ButtonLink>
                   <ButtonLink
                     variant='light'
-                    href='https://theodorusclarence.com'
+                    href=''
                   >
                     Light Variant
                   </ButtonLink>

@@ -8,8 +8,8 @@ const defaultMeta = {
   siteName: 'Prior Service Field Manual',
   description:
     ' A new resource to assist US prior service through the transition into the CIVILIAN WORLD!',
-  url: 'https://tsnext-tw.thcl.dev',
-  image: 'https://i.imgur.com/KUw5CfL.png',
+  url: '',
+  image: '',
   type: 'website',
   robots: 'follow, index',
 };

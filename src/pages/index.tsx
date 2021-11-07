@@ -39,7 +39,7 @@ export default function HomePage() {
 
             <footer className='absolute text-green-900 bottom-2'>
               © {new Date().getFullYear()} {''}
-              <CustomLink href='https://theodorusclarence.com?ref=tsnextstarter'>
+              <CustomLink href='https://github.com/Parham-S/psfm'>
               Prior Service Field Manual 
               </CustomLink>
           
