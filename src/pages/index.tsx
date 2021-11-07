@@ -34,7 +34,9 @@ export default function HomePage() {
             <div className="flex flex-wrap h-48 content-evenly">
             
             <PopupButton
+
             className="typeForm-button"
+
               id="L30MTwVa"
               size={90}
               hidden={{
