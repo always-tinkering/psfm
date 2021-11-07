@@ -6,6 +6,9 @@ import ButtonLink from '@/components/links/ButtonLink';
 import CustomLink from '@/components/links/CustomLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
+import MainForm from '@/components/MainForm';
+import { PopupButton } from '@typeform/embed-react'
+
 
 export default function HomePage() {
   return (
@@ -16,7 +19,7 @@ export default function HomePage() {
       <main>
         <section className='bg-dark'>
           <div className='flex flex-col items-center justify-center min-h-screen text-center layout'>
-            <h1>Prior Service Field Manual</h1>
+            <h1>Prior Service FM</h1>
             <p className='mt-2 text-sm'>
               Opportunity • Explore • Apply{' '}
             </p>
@@ -24,9 +27,24 @@ export default function HomePage() {
               
             </p>
 
-            <ButtonLink className='mt-6' href='/components' variant='light'>
+            <ButtonLink className='mt-6' href='/components/MainForm' variant='light'>
               Veterans
             </ButtonLink>
+            <PopupButton
+              id="<L30MTwVa>"
+              size={90}
+              hidden={{
+                foo: 'Foo Value',
+                bar: 'Bar Value',
+              }}
+              onReady={() => {
+                console.log('form has opened!')
+              }}
+              enableSandbox
+            >
+              click to open
+            </PopupButton>
+
             <ButtonLink className='mt-6' href='/' variant='light'>
               Active Duty
             </ButtonLink>
@@ -34,7 +52,6 @@ export default function HomePage() {
               Reserve
             </ButtonLink>
            
-
             
 
             <footer className='absolute text-green-900 bottom-2'>
