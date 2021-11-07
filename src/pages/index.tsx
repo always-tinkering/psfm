@@ -31,7 +31,7 @@ export default function HomePage() {
               Veterans
             </ButtonLink>
             <PopupButton
-              id="<L30MTwVa>"
+              id="L30MTwVa"
               size={90}
               hidden={{
                 foo: 'Foo Value',
