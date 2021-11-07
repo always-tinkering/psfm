@@ -26,7 +26,7 @@ export default function HomePage() {
             <p className='mt-2 text-sm text-gray-200'>
               
             </p>
-            <div class="h-48 flex flex-wrap content-evenly">
+            <div className="flex flex-wrap h-48 content-evenly">
             <ButtonLink className='mt-6' href='/components/MainForm' variant='light'>
               Veterans
             </ButtonLink>
