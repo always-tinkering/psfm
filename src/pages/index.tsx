@@ -9,6 +9,8 @@ import Seo from '@/components/Seo';
 import MainForm from '@/components/MainForm';
 import { PopupButton } from '@typeform/embed-react'
 
+import imgs from 'public/images/united-states-military-branch-logos.png';
+
 
 export default function HomePage() {
   return (
@@ -18,6 +20,9 @@ export default function HomePage() {
 
       <main>
         <section className='bg-dark'>
+          {/* <div >
+          <img src={imgs} alt='satisfy the machine'/>
+          </div> */}
           <div className='flex flex-col items-center justify-center min-h-screen text-center layout'>
             <h1>Prior Service FM</h1>
             <p className='mt-2 text-sm'>
@@ -27,11 +32,10 @@ export default function HomePage() {
               
             </p>
             <div className="flex flex-wrap h-48 content-evenly">
-            <ButtonLink className='mt-6' href='/components/MainForm' variant='light'>
-              Veterans
-            </ButtonLink>
+            
             <PopupButton
-              id="<L30MTwVa>"
+            className="typeForm-button"
+              id="L30MTwVa"
               size={90}
               hidden={{
                 foo: 'Foo Value',
@@ -42,15 +46,57 @@ export default function HomePage() {
               }}
               enableSandbox
             >
-              click to open
+              VETERAN
             </PopupButton>
 
-            <ButtonLink className='mt-6' href='/' variant='light'>
-              Active Duty
-            </ButtonLink>
-            <ButtonLink className='mt-6' href='/' variant='light'>
-              Reserve
-            </ButtonLink>
+            <PopupButton
+            className="typeForm-button"
+              id="L30MTwVa"
+              size={90}
+              hidden={{
+                foo: 'Foo Value',
+                bar: 'Bar Value',
+              }}
+              onReady={() => {
+                console.log('form has opened!')
+              }}
+              enableSandbox
+            >
+              ACTIVE
+            </PopupButton>
+
+            <PopupButton
+            className="typeForm-button"
+              id="L30MTwVa"
+              size={90}
+              hidden={{
+                foo: 'Foo Value',
+                bar: 'Bar Value',
+              }}
+              onReady={() => {
+                console.log('form has opened!')
+              }}
+              enableSandbox
+            >
+              RESERVE
+            </PopupButton>
+
+            <PopupButton
+            className="typeForm-button"
+              id="L30MTwVa"
+              size={90}
+              hidden={{
+                foo: 'Foo Value',
+                bar: 'Bar Value',
+              }}
+              onReady={() => {
+                console.log('form has opened!')
+              }}
+              enableSandbox
+            >
+              PRIOR SERVICE
+            </PopupButton>
+            
            </div>
             
 
